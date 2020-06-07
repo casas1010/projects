@@ -1,0 +1,459 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="IT consulting">
+    <meta name="keywords" content="React,ReactNative,Native Ios,Native Android,UI/UX,Svelte">
+    <meta name="author" content="James Moise & Juan Casas">
+    <title>Adlebridge Consulting| Welcome</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Noticia+Text" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  </head>
+  <body onload="load()">
+    <header>
+      <div class="container">
+        <div id="branding">
+          <div id="flex-brand">
+            <span id="logo"><a href="index.html"><img src="./img/empowered-logo.png"/></a></span>
+            <div id="logo-header">
+              <a href="index.html"><p id="big-header">Adlebridge Consulting</p></a>
+            </div>
+          </div>
+        </div>
+        <nav>
+          <ul>
+            <li><a class="current" href="index.html">Home</a></li>
+            <li id="contact_link"><span onclick="contactus()">Contact</span></li>
+            <li><a href="careers.html">Careers</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section id="showcase">
+      <div class="container">
+        <div class="fade" id="header">
+          <h2>Adlebridge <br>Consulting</h2>
+        </div>
+        <div id="showcase-msg">
+          <p>Tradition of Excellence</p>
+        </div>
+        <button onclick="learnmore()" type="button" class="showcase-button">Learn More</button>
+        <button onclick="contactus()" type="button" class="showcase-button">Contact Us</button>
+      </div>
+    </section>
+
+    <section id="aboutus">
+      <div class="container">
+        <div class="invisible" id="aboutus_header">
+          <h2>About Us</h2>
+        </div>
+        <div id="aboutus_content">
+          <p>
+            At Adlebridge Consulting, we strive to improve business effincy by enhancing they way our clients interact with theirs....
+             
+            
+            lives of others through universal access to fully-functional prosthetic limbs.
+            Empowered Prosthetics leverages student brainpower and the guidance of Ph.D. candidates, professors, and business
+            professionals to engineer and build prosthetics that utilize some of today’s premier technology.
+          </p>
+        </div>
+        <div id="aboutus-boxes">
+          <div class="aboutus-box">
+            <h4>Affordable</h4>
+            <img src="./img/dollar.png" id="aui1" alt="dollar sign">
+          </div>
+          <div class="aboutus-box">
+            <h4>Accessible</h4>
+            <img src="./img/globe.png" id="aui2" alt="the globe">
+          </div>
+          <div class="aboutus-box">
+            <h4>Innovative</h4>
+            <img src="./img/bulb.png" id="aui3" alt="light bulb">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!---->
+    <section id="mission_statement">
+      <div class="container">
+          <div id="ms-header" class="invisible">
+            <h2>Mission Statement</h2>
+          </div>
+          <div id="ms-content">
+            <p>
+              EP is a company founded by students with the belief that prosthetics should be easily accessible for
+              all. Our goal is to alleviate the financial burden associated with buying prosthetics so that children,
+              veterans, and the general population will be able to attain them for free or at reduced costs.
+            </p>
+          </div>
+      </div>
+    </section>
+
+    <section id="research">
+      <div class="container">
+        <div class="invisible" id="research-header">
+          <h2>Our Services</h2>
+        </div>
+        <div class="flex">
+          <span id="research-larrow" onclick="fade2()"><p><</p></span>
+          <div style="display:flex; justify-content:center;" id="r-img1" class="research-box g1" onmouseover="research('r-img1', 'rnlm1', 'info1')" onmouseout="researchout('r-img1', 'rnlm1', 'url(./img/musclemem.png)', 'info1')">
+            <!--<img id="r-img1" src="./img/musclemem.png" alt="">-->
+            <p style="align-self:center;" id="info1">Share the amazing things customers are saying about your business. Double click, or click Edit Text to make it yours.</p>
+            <div id="rnlm1" class="research-content">
+              <p class="r-n">Front-End Web</p>
+              <p class="r-lm">Learn More ></p>
+            </div>
+          </div>
+          <div style="display:flex; justify-content:center;" id="r-img2" class="research-box g1" onmouseover="research('r-img2', 'rnlm2', 'info2')" onmouseout="researchout('r-img2', 'rnlm2', 'url(./img/nitinol.png)', 'info2')">
+            <!--<img src="./img/nitinol.png" id="r-img2" alt="">-->
+            <p style="align-self:center;" id="info2">Nitinol is an alloy with shape memory: the ability to be deformed at one temperature, and then return to its original shape when being heated to its transformation temperature.</p>
+            <div id="rnlm2" class="research-content">
+              <p class="r-n">Mobile Applications</p>
+              <p class="r-lm">Learn More ></p>
+            </div>
+          </div>
+          <div style="display:flex; justify-content:center;" id="r-img3" class="research-box g1" onmouseover="research('r-img3', 'rnlm3', 'info3')" onmouseout="researchout('r-img3', 'rnlm3', 'url(./img/myoware.png)', 'info3')">
+            <!--<img src="./img/myoware.png" id="r-img3" alt="">-->
+            <p style="align-self:center;" id="info3">An EMG sensor allows the amputee to operate the prosthetic by picking up electrical activity produced by their muscles. This electrical activity is converted into signals that are analyzed by the processing unit, which then converts the signals into a message that is readable by the motor within the prosthetic.</p>
+            <div id="rnlm3" class="research-content">
+              <p class="r-n">Content Development</p>
+              <p class="r-lm">Learn More ></p>
+            </div>
+          </div>
+          <div id="r-img4" class="research-box g2" onmouseover="research('r-img4', 'rnlm4', 'info4')" onmouseout="researchout('r-img4', 'rnlm4', 'url(./img/3dfilament.png)', 'info4')">
+            <!--<img id="r-img1" src="./img/3dfilament.png" alt="">-->
+            <p style="align-self:center;" id="info4">3D filament is the thermoplastic material used in our 3D printers. Currently we are using PLA, ABS, and Ninjaflex each with different properties, requiring different temperatures to print. PLA is durable, easy to print, and biodegradable. ABS is impact resistant and very durable.</p>
+            <div id="rnlm4" class="research-content">
+              <p class="r-n">3D Filament</p>
+              <p class="r-lm">Learn More ></p>
+            </div>
+          </div>
+          <div id="r-img5" class="research-box g2" onmouseover="research('r-img5', 'rnlm5', 'info5')" onmouseout="researchout('r-img5', 'rnlm5', 'url(./img/kinect.png)', 'info5')">
+            <!--<img id="r-img1" src="./img/kinect.png" alt="">-->
+            <p style="align-self:center;" id="info5">The Kinect by Microsoft is used as a scanner to obtain 3D models of the consumer's residual limb. We use these models in creating our prosthetic prototypes.</p>
+            <div id="rnlm5" class="research-content">
+              <p class="r-n">Kinect</p>
+              <p class="r-lm">Learn More ></p>
+            </div>
+          </div>
+          <span id="research-rarrow" onclick="fade2()"><p>></p></span>
+        </div>
+        <div class="flex">
+          <div id="dot1" class="active-dot">
+            s
+          </div>
+          <div id="dot2" class="slider-dot">
+            s
+          </div>
+        </div>
+      </div>
+
+      
+    </section>
+
+    <!--
+    <section id="news">
+      <div class="container">
+        <div class="invisible" id="news-header">
+          <h2>News</h2>
+        </div>
+        <div class="flex">
+          <div class="news-box">
+            <img src="./img/KJ.png" style="background-color:lightblue;">
+            <div class="news-content">
+              <h3>Employee of the Month</h3>
+              <p class="news-date">May 23, 2018</p>
+              <p>
+                KJ McIver is our Employee of the
+                Month for May. KJ leads the
+                Mechanical Engineering team and is
+                responsible for many aspects of our
+                prosthetics design. We appreciate the
+                time and dedication he has put into
+                EP.
+              </p>
+            </div>
+          </div>
+          <div class="news-box">
+            <img src="./img/filament.png" style="background-color:lightblue;">
+            <div class="news-content">
+              <h3>New filament currently being developed</h3>
+              <p class="news-date">March 30, 2018</p>
+              <p>
+                The Materials Team at EP, lead by
+                Sahar Haik, has succeeded in
+                developing the first prototype of a
+                new PLA filament used for 3D
+                printing. Although minor
+                improvements need to be
+                assessed, the team is on the path
+                of producing recycled and
+                cheaper filament.
+              </p>
+            </div>
+          </div>
+          <div class="news-box">
+            <img src="./img/EP-sign.png" style="background-color:lightblue;">
+            <div class="news-content">
+              <h3>EP moves into Innovation Hub</h3>
+              <p class="news-date">February 10, 2018</p>
+              <p>
+                Empowered Prosthetics has moved
+                into it's official office at Innovate at UF
+                thanks to Mark Long. As a result of all
+                the incredible resources at this facility,
+                EP has managed to significantly speed
+                up productivity, and is on the way to
+                implementing new technologies into
+                our products.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="ourteam">
+      <div class="container">
+        <div onclick="scrolltell()" id="ourteam-header">
+          <h2>Our Team</h2>
+        </div>
+        <div class="ourteam-boxes">
+          <div class="invisible ourteam-box" id="fader1">
+            <img src="./img/nick.png" style="background-color:lightblue;">
+            <p class="name">Nick Friend</p>
+            <p class="pos">CEO</p>
+          </div>
+          <div class="invisible ourteam-box" id="fader2">
+            <img src="./img/jeremy.png" style="background-color:lightblue;">
+            <p class="name">Jeremy Petuchevsky</p>
+            <p class="pos">CTO</p>
+          </div>
+          <div class="invisible ourteam-box" id="fader3">
+            <img src="./img/marc.png" style="background-color:lightblue;">
+            <p class="name">Marc Fischzang</p>
+            <p class="pos">COO</p>
+          </div>
+          <div class="invisible ourteam-box" id="fader4">
+            <img src="./img/catalina.png" style="background-color:lightblue;">
+            <p class="name">Catalina Maureira</p>
+            <p class="pos">Technology Director</p>
+          </div>
+          <div class="invisible ourteam-box clear" id="fader5">
+            <img src="./img/KJ.png" style="background-color:lightblue;">
+            <p class="name">KJ McIver</p>
+            <p class="pos">Mechanical Head</p>
+          </div>
+          <div class="invisible ourteam-box" id="fader6">
+            <img src="./img/richelle.png" style="background-color:lightblue;">
+            <p class="name">Richelle Ross</p>
+            <p class="pos">Brand Head</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    -->
+
+    <section id="contactus">
+      <div class="container">
+        <div class="flex-center invisible" id="cu_header">
+          <h2 class="contact-us">Contact <br/><span class="contact">Empowered</span><br/><span class="contact">Prosthetics</span></h2>
+        </div>
+        <div id="cu_content" class="invisible">
+          <p id="cu-txt1">Email: prostheticprojectuf@gmail.com<br/>Tel:  561-452 -5550</p>
+          <p id="cu-txt2">For any general inquiries, please fill in the following contact form:</p>
+          <div id="cu-form">
+            <form action="db-connect.php" method="post" id="cu-f1">
+              <input type="text" name="name" placeholder="Name *" required> <br/>
+              <input type="email" name="email" placeholder="Email *" required> <br/>
+              <input type="text" name="subject" placeholder="Subject"> <br/>
+              <textarea id="message" name="message" placeholder="Message" rows="2" cols="22"></textarea> <br/>
+              <input style="background-color:#70dbdb;padding:10px;border:none;cursor:pointer;color:white;margin-top:5px;" type="submit" value="Submit" name="submitForm">
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="backtotop">
+      <div class="container">
+        <div id="back-to-top">
+          <img onclick="totop()" src="./img/uparrow.png"/>
+          <p onclick="totop()">Back to top</p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <p>&copy; 2018 Empowered Prosthetics</p>
+      </div>
+    </footer>
+
+    <script>
+
+    var slidecontrol = 0;
+
+    function load() {
+      setInterval(function() {
+        if(this.scrollY >= 160 && this.scrollY < 760) {
+          fade('aboutus_header');
+        }
+        if(this.scrollY >= 760 && this.scrollY < 1240) {
+          fade('ms-header');
+        }
+        if(this.scrollY >= 1240 && this.scrollY < 1800) {
+          fade('research-header');
+        }
+        if(this.scrollY >= 1800 && this.scrollY < 2619.60009765625) {
+          fade('news-header');
+        }
+        if(this.scrollY >= 2619.60009765625 && this.scrollY < 3400) {
+          fade('fader1');
+          fade('fader2');
+          fade('fader3');
+          fade('fader4');
+          fade('fader5');
+          fade('fader6');
+        }
+        if(this.scrollY >= 3400) {
+          fade('cu_header');
+          fade('cu_content');
+        }
+        }, 100);
+    }
+
+    function contactus() {
+      window.scroll({
+        top: 3677.333251953125,
+        left: 0,
+        behavior: 'smooth'
+      });
+    }
+
+    function totop() {
+      window.scroll({
+        top: 0,
+        left: 0,
+        behavior: 'smooth'
+      });
+    }
+
+    function learnmore() {
+      window.scroll({
+        top: 590,
+        left: 0,
+        behavior: 'smooth'
+      });
+    }
+
+    function scrolltell() {
+      window.alert(this.scrollY);
+    }
+
+    function fade(name) {
+      var x = document.getElementById(name);
+      x.classList.remove('invisible');
+      x.classList.add('fade');
+    }
+
+    function research(rimg, rnlm, info) {
+      var box = document.getElementById(rimg);
+      var text1 = document.getElementById(rnlm);
+      var text2 = document.getElementById(info);
+
+      text1.style.display = "none";
+      box.style.backgroundImage = "url('')";
+      box.style.backgroundColor = "#303F4D";
+      text2.style.display = "block";
+    }
+
+    function researchout(rimg, rnlm, img, info) {
+      var box = document.getElementById(rimg);
+      var text1 = document.getElementById(rnlm);
+      var text2 = document.getElementById(info);
+      text1.style.display = "block";
+      box.style.backgroundImage = img;
+      box.style.backgroundColor = "#70dbdb";
+      text2.style.display = "none";
+
+    }
+
+    function fade2() {
+      var arr1 = document.getElementsByClassName('g1');
+      var arr2 = document.getElementsByClassName('g2');
+      var dot1 = document.getElementById('dot1');
+      var dot2 = document.getElementById('dot2');
+      if(slidecontrol == 0) {
+        dot1.classList.remove('active-dot');
+        dot1.classList.add('slider-dot');
+
+        dot2.classList.remove('slider-dot');
+        dot2.classList.add('active-dot');
+
+        arr1[0].classList.add('fade2');
+        arr1[1].classList.add('fade2');
+        arr1[2].classList.add('fade2');
+
+        setTimeout(function() {
+          arr1[0].style.display = "none";
+          arr1[1].style.display = "none";
+          arr1[2].style.display = "none";
+
+          slidecontrol = 1;
+
+          arr2[0].classList.remove('fade2');
+          arr2[0].style.display = "flex";
+          arr2[0].style.justifyContent = "center";
+
+          arr2[1].classList.remove('fade2');
+          arr2[1].style.display = "flex";
+          arr2[1].style.justifyContent = "center";
+
+          arr1[0].classList.remove('fade2');
+          arr1[1].classList.remove('fade2');
+          arr1[2].classList.remove('fade2');
+        }, 1400);
+      }
+
+      if(slidecontrol == 1) {
+        dot2.classList.remove('active-dot');
+        dot2.classList.add('slider-dot');
+
+        dot1.classList.remove('slider-dot');
+        dot1.classList.add('active-dot');
+
+        arr2[0].classList.add('fade2');
+        arr2[1].classList.add('fade2');
+
+        setTimeout(function() {
+          arr2[0].style.display = "none";
+          arr2[1].style.display = "none";
+
+          slidecontrol = 0;
+
+          arr1[0].classList.remove('fade2');
+          arr1[0].style.display = "flex";
+          arr1[0].style.justifyContent = "center";
+
+          arr1[1].classList.remove('fade2');
+          arr1[1].style.display = "flex";
+          arr1[1].style.justifyContent = "center";
+
+          arr1[2].classList.remove('fade2');
+          arr1[2].style.display = "flex";
+          arr1[2].style.justifyContent = "center";
+
+          arr2[0].classList.remove('fade2');
+          arr2[1].classList.remove('fade2');
+        }, 1400);
+      }
+    }
+    </script>
+  </body>
+</html>

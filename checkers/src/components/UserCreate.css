@@ -1,0 +1,18 @@
+
+
+.label {
+    width: 119px;
+ }
+
+.info{
+    display: inline-block;
+}
+.master{
+    display: inline-block;
+}
+
+
+
+.player2{
+    float:right
+}

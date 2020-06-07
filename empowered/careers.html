@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Affordable prosthetics for low-income families">
+    <meta name="keywords" content="prosthetics, non-profit organization, non-profit, robotics, low-income families">
+    <meta name="author" content="James Moise">
+    <title>Empowered Prosthetics | Welcome</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Noticia+Text" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div id="branding">
+          <div id="flex-brand">
+            <span id="logo"><a href="index.html"><img src="./img/empowered-logo.png"/></a></span>
+            <div id="logo-header">
+              <a href="index.html"><p id="big-header">Empowered Prosthetics</p></a>
+            </div>
+          </div>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a class="current" href="careers.html">Careers</a></li>
+            <li id="contact_link"><span onclick="contactus2()">Contact</span></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section id="row-2">
+      <div class="container">
+        <h2>
+          Available Positions
+        </h2>
+        <div class="careers-boxes">
+          <div class="careers-box">
+            <h4>Mechanical Engineering Intern</h4>
+            <ol>
+              <li>Assist with the design of our prosthetics using 3D modeling software.</li>
+              <li>You will be placed on one of our design teams based off of your interests (Hand, Forearm, or Wrist).</li>
+            </ol>
+          </div>
+          <div class="careers-box">
+            <h4>Electrical Engineering Intern</h4>
+            <ol>
+              <li>Work with Arduino and develop code to add functionality to our prosthetics.</li>
+              <li>Confirm components' capabilities by designing testing methods; testing properties.</li>
+            </ol>
+          </div>
+          <div class="careers-box">
+            <h4>Materials Engineering Intern</h4>
+            <ol>
+              <li>
+                Assist with the development of new 3D
+                printing filaments.
+              </li>
+              <li>
+                Research and implement new materials
+                to improve our products.
+              </li>
+            </ol>
+          </div>
+          <div class="careers-box">
+            <h4>Industrial Engineering Intern</h4>
+            <ol>
+              <li>
+                Working with the business team to
+                strategize long term goals.
+              </li>
+              <li>
+                Act as an internal consultant to aid in
+                the optimization of the entire
+                organization.
+              </li>
+              <li>
+                Work along side the COO to develop
+                clever solutions to operations problems.
+              </li>
+            </ol>
+          </div>
+          <div class="careers-box">
+            <h4>Artificial Intelligence/Data Science Intern</h4>
+            <ol>
+              <li>
+                Assist in the implementation of AI and Machine Learning within our products.
+              </li>
+              <li>
+                Consult administration on the potential of upcoming technologies.
+              </li>
+              <li>
+                Use ML techniques to provide the organization with valuable insights.
+              </li>
+            </ol>
+          </div>
+          <div class="careers-box">
+            <h4>Brand Identity Intern</h4>
+            <ol>
+              <li>
+                You will have a specific role within the Brand Identity team (Website Design, Merchandise, Social Media, and Research).
+              </li>
+              <li>
+                Use your creative potential to improve our brand image and aesthetic appeal.
+              </li>
+            </ol>
+          </div>
+          <div class="careers-box">
+            <h4>Business Intern</h4>
+            <ol>
+              <li>
+                Work with the business team to
+                strategize long term goals.
+              </li>
+              <li>
+                Assist in formulation of solutions to
+                logistical issues.
+              </li>
+            </ol>
+          </div>
+          <div class="careers-box">
+            <h4>Human Resource Intern</h4>
+            <ol>
+              <li>
+                Assist in the recruiting of new employees.
+              </li>
+              <li>
+                Devise solutions to employee issues within the organization.
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="apply">
+      <div class="container flex-center">
+        <form id="careers-form">
+          <p id="c-form-title">Apply below if any of the above positions interest you.</p>
+          <input type="name" name="first-name" placeholder="First Name" class="form-input" required><br/>
+          <input type="name" name="last-name" placeholder="Last Name" class="form-input" required><br/>
+          <input type="email" name="email" placeholder="Email" class="form-input" required><br/>
+          <input type="number" name="number" placeholder="Phone" class="form-input" required><br/>
+          <div id="input-inline">
+            <input type="text" name="major" placeholder="Major" required style="font-family:Raleway;padding:10px; width:40%; font-size:18px; float:left; display:inline;">
+            <input type="text" name="position" placeholder="Position interested in" required style="font-family:Raleway;padding:10px; width:40%; font-size:18px;display:inline;">
+          </div><br/>
+          <input id="form-date" type="date" name="date" placeholder="Graduation Date: " required class="form-input placeholder" onclick="placeHolder('form-date')"></br>
+          <div id="form-radios">
+            <p id="form-question">How many hours are you able to devote to this position per week?</p>
+            <div id="inner-form-radios">
+              <span class="form-radio"><input type="radio" name="hours" checked value="1-5">1-5 hours per week</span><br/>
+              <span class="form-radio"><input type="radio" name="hours" value="5-10">5-10 hours per week</span><br/>
+              <span class="form-radio"><input type="radio" name="hours" value="10-15">10-15 hours per week</span><br/>
+              <span class="form-radio"><input type="radio" name="hours" value="15+">15+ hours per week</span><br/>
+            </div>
+          </div>
+          <div id="resume-upload">
+            <span style="font-family:Raleway;color:gray;font-size:18px;">Upload Resume: </span>
+            <input style="font-family:Raleway; margin-left:220px;"type="file" name="resume" value="resume" required>
+          </div><br/>
+          <span id="submission"><input type="submit" value="Submit" id="form-submit"></span>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <p>&copy; 2018 Empowered Prosthetics</p>
+      </div>
+    </footer>
+
+    <script>
+    function contactus2() {
+      var win = window.open('home.html', '_self');
+    }
+
+    //Removes placeholder
+    function placeHolder(e) {
+      var z = document.getElementById(e);
+      z.classList.remove('placeholder');
+    }
+    </script>
+  </body>
+  </html>

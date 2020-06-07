@@ -1,0 +1,41 @@
+
+#DisplayInfo{
+    width: 306px;
+    position: absolute;
+    left:50%;
+    text-align: center;
+    margin: 20px 0 0 -170px;
+}
+
+.chessboard {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  
+    margin: -70px 0 0 -170px;
+    width: 306px;
+    height: 306px;
+
+    border: black;
+    border-style: solid;
+}
+.cell {
+    width: 100px;
+    height: 100px;
+}
+
+.black {
+    float: left;
+    background-color:black;
+
+    display: table-cell;
+    vertical-align:middle;
+}
+.white {
+    float: left;
+    background-color: white;  
+
+    display: table-cell;
+    vertical-align:middle;
+}
+
