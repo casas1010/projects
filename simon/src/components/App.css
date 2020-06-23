@@ -1,0 +1,52 @@
+
+#background{
+  height: 100vh;
+  background-color: whitesmoke;
+  position: relative;
+}
+  
+#parentContainer {  
+    
+    padding: 20px;
+    background-color: teal;
+    position: absolute;
+    left: 40%;
+    top: 20%;
+    text-align: center;
+    border-radius: 25px;
+    
+  }
+
+.button{
+    display: inline-block;
+    width: 100px;
+    height: 100px; 
+    border-radius: 25px;
+    color: darkblue
+    
+}
+.red{
+  background-color: red;
+  color: white;
+}
+.blue{
+  background-color: blue;
+  color: white;
+
+}
+.green{
+  background-color: green;
+  color: white;
+
+}
+.yellow{
+  background-color: yellow;
+  color: white;
+
+}
+
+.command{
+  width: 100px;
+  height: 40px;
+}
+

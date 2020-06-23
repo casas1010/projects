@@ -1,0 +1,39 @@
+#background{
+    height: 100vh;
+    
+    position: relative;
+}
+
+.chessboard {
+
+    width: 306px;
+    height: 306px;
+    border: black;
+    border-style: solid;
+}
+.cell {
+    width: 100px;
+    height: 100px;
+}
+
+.black {
+    float: left;
+    background-color:black;
+
+    display: table-cell;
+    vertical-align:middle;
+}
+.white {
+    float: left;
+    background-color: white;  
+
+    display: table-cell;
+    vertical-align:middle;
+}
+
+#resetButton{
+    display: block;
+
+    margin: 0 auto;
+}
+

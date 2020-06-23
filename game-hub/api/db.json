@@ -1,0 +1,9 @@
+{
+    "users": [
+      { "id": 1, "Name": "Juan" },
+      { "id": 2, "Name": "Marc" }
+    ],
+    "games": [
+      { "id": 1, "body": "some comment", "postId": 1 }
+    ]  
+  }
