@@ -1,6 +1,6 @@
-// parent element
-import React, { Component } from 'react';
-class App extends Component {
+import React, { Component, useEffect, useState } from 'react';
+
+class Parent extends Component {
   state = {
     displayChild: true
   }
@@ -15,40 +15,36 @@ class App extends Component {
           <br />
           <button onClick={this.changeState}>change state value of displayChild</button>
           <Child />
-        </div>)
+        </div>
+      );
     }
-    else {
+    else if (this.state.displayChild === false) {
       return (
         <div>
           <div id='id'>{`displayChild value: ${this.state.displayChild}`}</div>
           <br />
           <button onClick={this.changeState}>change state value of displayChild</button>
-        </div >)
+        </div>
+      );
     }
   }
 }
+function Child() {
 
-export default App;
-
-// child element
-class Child extends Component {
-
-  componentWillUnmount() {
-    console.log('componentWillUnmount() text!');
+  const [dummyField, setdummyField] = useState(true);
+  useEffect(() => {
+    console.log("componentDidMount() and componentDidUpdate() as useEffect() text!");
+    return () => { console.log('componentWillUnmount() as useEffect() text!') }
+  }, [dummyField]);
+  const changeState = () => {
+    setdummyField(!dummyField);
   }
-
-  render() {
-    return (<div>Text inside Child!</div>);
-  }
+  return (
+    <div>
+      <div id='id'>{`dummyField value: ${dummyField}`}</div>
+      <br />
+      <button onClick={changeState}>change state value of dummyField</button>
+    </div>
+  );
 }
-
-
-
-// import React, { Component, useEffect } from 'react';
-// function Child() {
-//   useEffect(() => {
-//     return (() => { console.log('useEffect() text!') })
-//   }, [])
-
-//   return (<div>Text inside Child!</div>)
-// }
+export default Parent

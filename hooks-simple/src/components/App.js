@@ -1,20 +1,15 @@
-import React, {useState} from 'react';
-import ResourceList from './ResourceList';
+import React, { useState } from 'react';
+import Background from './Background';
 
 
 const App = () => {
-    const [resource, setResource] = useState('posts');
 
-        return (
-            <div>
-                <div>
-                    <button onClick={ ()=>{ setResource('posts')} }>Posts</button>
-                    <button onClick={ ()=>{ setResource('todos')} }>Todos</button>
-                </div>
-                <ResourceList resource={resource} />
-            </div>
-        );
-    }
+    return (
+        <div className='background'>
+            <Background />
+        </div>
+    );
+}
 
 
 export default App;

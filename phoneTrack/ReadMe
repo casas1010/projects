@@ -1,0 +1,18 @@
+TERMINAL 1
+OPEN TRACK-SERVER
+cd track-server
+npm run dev
+
+TERMINAL 2
+OPEN TRACKS
+cd tracks
+npm start
+
+
+TERMINAL 3
+
+OPEN TRACKS
+cd tracks
+ngrok http 3000
+ENTER
+open tracker.js, change the base URL to the new URL obtained from terminal
