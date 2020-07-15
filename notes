@@ -1,0 +1,58 @@
+NOTE:
+__...__ : note from author
+
+-AsyncStorage:react-native-------------
+(1)SMALL DATA
+- AsyncStorage: object/function that allows us to store small data to the users phone
+- if a user restarts application, all the data is dumped. This is why we use AsyncStorage, so we dont have that issue.
+- AsyncStorage returns a promise
+
+- How to use it?
+import import { AsyncStorage } from 'react-native';
+AsyncStorage.setItem('_tokenKey_',token);
+AsyncStorage.getItem('_tokenKey_');
+
+
+(2)BIGGER DATA
+npm install --save redux-persist
+
+
+- Location: index.js
+- How to use it?
+
+import { persistStore, autoRehydrate } from 'redux-persist';
+import { AsyncStorage } from '../reducers';
+
+
+const store = createStore(
+    xxx,
+    xxx,
+    compose(
+        xxx, autoRehydrate()
+    )
+);
+ 
+ persistStore(store, { storage: AsyncStorage, whitelist: ['@'] })
+
+ where @ is
+
+-AsyncStorage:react-native-------------
+
+
+-redux--------------------
+
+- setup App.js 
+import { Provider } from 'react-redux'
+React.render(
+  <Provider store={store}>
+    <App />
+  </Provider>)
+
+
+- allow access to action creators
+
+
+
+
+
+-redux--------------------

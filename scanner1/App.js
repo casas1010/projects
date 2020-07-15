@@ -2,8 +2,17 @@ import React from 'react';
 import { Button, Text, View } from 'react-native';
 import { createStackNavigator } from 'react-navigation';
 
+import Scanner from './screens/Scanner';
+
 class App extends React.Component {
+
+  
+    
+  
+
+
   render() {
+    
     return (
       <View
         style={{
@@ -20,7 +29,9 @@ class App extends React.Component {
 
 const MyNavigator = createStackNavigator(
   {
-    RouteNameOne: App,
+    // App,
+    Scanner
+
   },
   {
     // headerTransitionPreset: 'uikit',
@@ -28,4 +39,4 @@ const MyNavigator = createStackNavigator(
   }
 );
 
-export default App;
+export default MyNavigator;

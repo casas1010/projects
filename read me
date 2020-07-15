@@ -93,7 +93,10 @@ npm install react-native-elements
 
 ***** REACT NATIVE *****
 
-* Start react-native project *
+-Start react-native project---------------------------
+
+TRY THIS:  npx create-react-native-app
+https://docs.expo.io/bare/installing-unimodules/
 
 npm install expo-cli --global
 npm install -g expo-cli
@@ -102,6 +105,27 @@ npx exp-cli init pName
 OR 
 
 expo init pName
+
+------------------------------------------------------
+-Redux------------------------------------------------
+npm install --save redux react-redux 
+
+async action creators
+npm install redux-thunk
+
+------------------------------------------------------
+
+-debugger---------------------------------------------
+brew update && brew cask install react-native-debugger
+npm install --save redux-devtools-extension
+
+
+------------------------------------------------------
+
+
+
+
+
 
 
 Install React Navigation
